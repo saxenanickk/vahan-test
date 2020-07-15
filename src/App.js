@@ -1,26 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+
+import Tabs from "./components/Tabs";
+import Chats from "./containers/Chats";
+import Jobs from "./containers/Jobs";
+import Profile from "./containers/Profile";
+import NetworkDetector from "./Utils/NetworkDetector";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="container">
+      <header className="header">
+        <p>Job Finder</p>
       </header>
+      <Tabs>
+        <div label="CHAT">
+          <Chats />
+        </div>
+        <div label="MY JOBS">
+          <Jobs />
+        </div>
+        <div label="PROFILE">
+          <Profile />
+        </div>
+      </Tabs>
     </div>
   );
 }
 
-export default App;
+export default NetworkDetector(App);
