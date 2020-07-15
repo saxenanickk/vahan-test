@@ -1,0 +1,14 @@
+.tab-list-item {
+  display: flex;
+  flex: 1;
+  height: 10vh;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  color: #97a2ad;
+}
+
+.tab-list-active {
+  background-color: #e6bb4a;
+  color: #403e3d;
+}
