@@ -1,0 +1,18 @@
+.tab-bar {
+  background-color: #232f3c;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tabs {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
